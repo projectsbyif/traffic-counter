@@ -1,0 +1,21 @@
+{
+  "extends": "eslint-config-google",
+  "parserOptions": {
+     "sourceType": "module",
+     "ecmaVersion": 6,
+     "ecmaFeatures": {
+       "experimentalObjectRestSpread": true,
+       "jsx": true
+     }
+  },
+  "rules": {
+    "require-jsdoc": [2, {
+      require: {
+        FunctionDeclaration: false,
+        MethodDefinition: false,
+        ClassDeclaration: false,
+      }
+    }],
+    "new-cap": [0]
+  }
+}
