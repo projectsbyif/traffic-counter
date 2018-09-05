@@ -70,7 +70,7 @@ app.get('/', (req, res) => {
 let parseResults = (results) => {
   let parsedResults = results.map((result) => {
     return {
-      '@MeasurementDateGMT': moment(result.timestamp)
+      '@MeasurementDateGMT': moment(result.timestamp).utc()
         .format('YYYY-MM-DD HH:mm'),
       '@Data1': result.pedestrians.toString(),
       '@Data2': result.bicycles.toString(),

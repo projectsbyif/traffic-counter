@@ -6,7 +6,7 @@ module.exports = (sequelize, DataTypes) => {
     motorbikes: DataTypes.INTEGER,
     cars: DataTypes.INTEGER,
     lorries: DataTypes.INTEGER,
-    timestamp: DataTypes.DATE,
+    timestamp: DataTypes.STRING,
   }, {});
   Records.associate = function(models) {
   };

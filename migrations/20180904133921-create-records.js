@@ -24,7 +24,7 @@ module.exports = {
         type: Sequelize.INTEGER,
       },
       timestamp: {
-        type: Sequelize.DATE,
+        type: Sequelize.STRING,
       },
       createdAt: {
         allowNull: false,
