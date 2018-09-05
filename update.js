@@ -20,7 +20,7 @@ models.Records.count().then((count) => {
     Promise.all(hoursToCreateQueue).then(() => process.exit());
   }
 
-  createNewRecord(moment().minute(0).second(0).millisecond(0)).then(() => {
+  createNewRecord(moment()).then(() => {
     return process.exit();
   });
 });
