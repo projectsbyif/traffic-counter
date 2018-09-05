@@ -1,5 +1,6 @@
 // NPM REQUIRES
 require('dotenv').config();
+const _ = require('lodash');
 const express = require('express');
 const app = express();
 const http = require('http').Server(app);
@@ -26,6 +27,8 @@ app.get('/', (req, res) => {
     limit: 12,
   })
   .then((results) => {
+    results = _.reverse(results);
+
     const DATA = parseResults(results);
 
     const RESULTS = {
