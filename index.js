@@ -18,7 +18,7 @@ if (checkEnvVars(['DATABASE_URL'])) {
 app.use(helmet());
 app.use(express.json());
 app.use(express.urlencoded({extended: true}));
-app.set('port', process.env.PORT || 3000);
+app.set('port', process.env.PORT || 8000);
 
 // ROUTES
 app.get('/', (req, res) => {
